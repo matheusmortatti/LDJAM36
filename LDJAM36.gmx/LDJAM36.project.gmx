@@ -9,7 +9,7 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <shaders name="shaders">
-    <shader type="GLSLES">shaders\shader0.shader</shader>
+    <shader type="GLSLES">shaders\waterRipple.shader</shader>
   </shaders>
   <help>
     <rtf>help.rtf</rtf>
