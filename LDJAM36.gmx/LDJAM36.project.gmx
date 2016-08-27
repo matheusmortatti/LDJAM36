@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\barcoSprt</sprite>
     <sprite>sprites\otavioTestSprite2</sprite>
+    <sprite>sprites\ilhaFeliz</sprite>
     <sprite>sprites\otavioTestSprite3</sprite>
     <sprite>sprites\estrelinha</sprite>
     <sprite>sprites\stormSprite</sprite>
@@ -24,6 +25,7 @@
     <object>objects\wind</object>
     <object>objects\ship</object>
     <object>objects\colisaoTeste</object>
+    <object>objects\colisaoFeliz</object>
     <object>objects\camera_controller</object>
     <object>objects\estrelaTest</object>
     <object>objects\starController</object>

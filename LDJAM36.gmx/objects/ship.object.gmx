@@ -97,20 +97,32 @@ if keyboard_check(vk_right) direction -= 1.0;
 
 if keyboard_check(vk_up) {
     if (dirFlag) {
-        if (speed &lt; wind.windStr*1.33) {
+        if (speed &lt; wind.windStr*1.0) {
             speed += 0.2;
         }        
     }
     else if (opFlag) {
-        if (speed &lt; wind.windStr*0.66) {
+        if (speed &lt; wind.windStr*0.5) {
             speed += 0.125;
         }        
     }
-    else if (speed &lt; wind.windStr) {
+    else if (speed &lt; wind.windStr*0.75) {
             speed += 0.15;
     } 
     
-    if (speed &gt;= wind.windStr) speed -= 0.15;
+    if (dirFlag) {
+        if (speed &gt; wind.windStr*1.0) {
+            speed -= 0.125;
+        }        
+    }
+    else if (opFlag) {
+        if (speed &gt; wind.windStr*0.5) {
+            speed -= 0.2;
+        }        
+    }
+    else if (speed &gt; wind.windStr*0.75) {
+            speed -= 0.15;
+    } 
 }
     
 image_angle = direction;
@@ -143,6 +155,32 @@ show_debug_message(string(timeLeft));
 if (timeLeft &lt;= 0) {
     room_restart();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="colisaoFeliz">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (timeLeft &lt; 35) timeLeft += 15;
+
+speed = 0;
+direction += 0.1;
 </string>
           </argument>
         </arguments>

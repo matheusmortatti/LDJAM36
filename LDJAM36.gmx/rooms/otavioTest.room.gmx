@@ -83,6 +83,10 @@
     <instance objName="storm" x="416" y="864" name="inst_A9EE0313" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SeaMonster" x="320" y="448" name="inst_FBEDEEC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="krakenTrap" x="961" y="480" name="inst_633AD197" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="colisaoFeliz" x="416" y="160" name="inst_898C3412" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="colisaoFeliz" x="832" y="384" name="inst_B993DD04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="colisaoFeliz" x="736" y="832" name="inst_C6D65439" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="colisaoFeliz" x="160" y="736" name="inst_A6E1D745" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
