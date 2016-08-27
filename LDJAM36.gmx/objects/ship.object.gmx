@@ -83,17 +83,11 @@ opFlag = 0;
 
 friction = 0.1;
 
-if (((wind.windDir &gt; 335) || (wind.windDir &lt; 25)) &amp;&amp; ((direction &gt; 335) || (direction &lt; 25))) {
-    dirFlag = 1;
-}
-else if (((wind.windDir &gt; direction) &amp;&amp; (wind.windDir - direction &lt; 50)) || ((direction &gt; wind.windDir) &amp;&amp; (direction - wind.windDir &lt; 50))) {
+if angle_difference(wind.windDir, direction) &lt; 45 {
     dirFlag = 1;
 }
 
-if (((wind.windDir &gt; 335) || (wind.windDir &lt; 205)) &amp;&amp; ((direction &gt; 335) || (direction &lt; 205))) {
-    opFlag = 1;
-}
-else if (((wind.windDir &gt; direction) &amp;&amp; (wind.windDir - direction &gt; 155)) || ((direction &gt; wind.windDir) &amp;&amp; (direction - wind.windDir &gt; 155))) {
+if angle_difference(wind.windDir, direction) &gt; 135 {
     opFlag = 1;
 }
 
@@ -149,6 +143,62 @@ show_debug_message(string(timeLeft));
 if (timeLeft &lt;= 0) {
     room_restart();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="krakenTentacle">
+      <action>
+        <libid>1</libid>
+        <id>331</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_restart_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="4" ename="SeaMonster">
+      <action>
+        <libid>1</libid>
+        <id>331</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_restart_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="4" ename="storm">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>speed = wind.windStr*3;
+if (direction != wind.windDir) direction += 1;
 </string>
           </argument>
         </arguments>

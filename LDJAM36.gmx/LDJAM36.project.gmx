@@ -9,7 +9,11 @@
     <sprite>sprites\barcoSprt</sprite>
     <sprite>sprites\otavioTestSprite2</sprite>
     <sprite>sprites\otavioTestSprite3</sprite>
-    <sprite>sprites\sprite3</sprite>
+    <sprite>sprites\estrelinha</sprite>
+    <sprite>sprites\stormSprite</sprite>
+    <sprite>sprites\monster</sprite>
+    <sprite>sprites\kraken_trap</sprite>
+    <sprite>sprites\kraken_tentacle</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -24,6 +28,10 @@
     <object>objects\estrelaTest</object>
     <object>objects\starController</object>
     <object>objects\HUD</object>
+    <object>objects\storm</object>
+    <object>objects\SeaMonster</object>
+    <object>objects\krakenTrap</object>
+    <object>objects\krakenTentacle</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\otavioTest</room>

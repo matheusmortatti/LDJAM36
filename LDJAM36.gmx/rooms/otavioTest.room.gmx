@@ -64,6 +64,25 @@
     <instance objName="estrelaTest" x="704" y="640" name="inst_5654C360" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="HUD" x="64" y="0" name="inst_F4150415" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ship" x="896" y="672" name="inst_B9692EB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="storm" x="512" y="704" name="inst_6B5D1231" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="576" y="800" name="inst_EE748DD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="416" y="768" name="inst_CA7C1EBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="448" y="832" name="inst_64742DD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="512" y="736" name="inst_6016F6F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="480" y="800" name="inst_03D75334" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="512" y="768" name="inst_E3DE602D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="448" y="704" name="inst_2F7A7EF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="448" y="736" name="inst_51ACE3E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="576" y="736" name="inst_75874F81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="512" y="800" name="inst_463242F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="576" y="864" name="inst_A7132B36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="480" y="832" name="inst_10714591" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="352" y="832" name="inst_D059DD7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="512" y="864" name="inst_6CB6789B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="384" y="800" name="inst_5FC64EAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="storm" x="416" y="864" name="inst_A9EE0313" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SeaMonster" x="320" y="448" name="inst_FBEDEEC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="krakenTrap" x="961" y="480" name="inst_633AD197" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
