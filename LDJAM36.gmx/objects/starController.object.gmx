@@ -33,6 +33,7 @@ stars_1 = ds_list_create();
 
 globalvar stars_2;
 stars_2 = ds_list_create();
+
 </string>
           </argument>
         </arguments>
