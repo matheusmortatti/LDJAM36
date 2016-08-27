@@ -9,6 +9,7 @@
     <sprite>sprites\barcoSprt</sprite>
     <sprite>sprites\otavioTestSprite2</sprite>
     <sprite>sprites\otavioTestSprite3</sprite>
+    <sprite>sprites\sprite3</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -19,6 +20,8 @@
     <object>objects\ship</object>
     <object>objects\colisaoTeste</object>
     <object>objects\camera_controller</object>
+    <object>objects\estrelaTest</object>
+    <object>objects\starController</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\otavioTest</room>
