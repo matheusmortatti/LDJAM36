@@ -17,6 +17,7 @@
   </scripts>
   <objects name="objects">
     <object>objects\terrain_generator</object>
+    <object>objects\player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\terrain</room>
