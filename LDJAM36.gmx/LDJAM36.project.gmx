@@ -5,10 +5,22 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\barcoSprt</sprite>
+    <sprite>sprites\otavioTestSprite2</sprite>
+    <sprite>sprites\otavioTestSprite3</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <rooms name="rooms"/>
+  <objects name="objects">
+    <object>objects\ship</object>
+    <object>objects\colisaoTeste</object>
+    <object>objects\camera_controller</object>
+  </objects>
+  <timelines name="timelines"/>
+  <rooms name="rooms">
+    <room>rooms\otavioTest</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
