@@ -28,12 +28,11 @@
             <string>// feito por Otávio
 // Controla as seleções de estrelas
 
-globalvar star;
+globalvar stars_1;
+stars_1 = ds_list_create();
 
-for (cont = 0; cont &lt;= 10^12; cont++) {
-    star[cont] = noone;
-}
-
+globalvar stars_2;
+stars_2 = ds_list_create();
 </string>
           </argument>
         </arguments>
@@ -58,7 +57,7 @@ for (cont = 0; cont &lt;= 10^12; cont++) {
             <kind>1</kind>
             <string>// Otavio : Desenha a linha entre duas estrelas selecionadas
 
-// flags
+/*// flags
 var flagX, flagY;
 flagX = 0;
 flagY = 0;
@@ -97,6 +96,34 @@ for (cont = 0; cont &lt;= 10^12; cont++) {
             flagY = 0;
         }
     }
+}*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+show_debug_message("Got here!!");
+for (i = 0; i &lt; ds_list_size(stars_1); i++) {
+    s1 = ds_list_find_value(stars_1, i);
+    s2 = ds_list_find_value(stars_2, i);
+    draw_line_width_colour(s1.x, s1.y, s2.x, s2.y, 5,
+                            c_white, c_yellow);
 }
 </string>
           </argument>
