@@ -12,7 +12,7 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-<<<<<<< HEAD
+
   <objects name="objects">
     <object>objects\ship</object>
     <object>objects\colisaoTeste</object>
@@ -22,11 +22,11 @@
   <rooms name="rooms">
     <room>rooms\otavioTest</room>
   </rooms>
-=======
+
   <shaders name="shaders">
     <shader type="GLSLES">shaders\waterRipple.shader</shader>
   </shaders>
->>>>>>> origin/master
+
   <help>
     <rtf>help.rtf</rtf>
   </help>
