@@ -17,11 +17,13 @@
     <shader type="GLSLES">shaders\waterRipple.shader</shader>
   </shaders>
   <objects name="objects">
+    <object>objects\wind</object>
     <object>objects\ship</object>
     <object>objects\colisaoTeste</object>
     <object>objects\camera_controller</object>
     <object>objects\estrelaTest</object>
     <object>objects\starController</object>
+    <object>objects\HUD</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\otavioTest</room>
