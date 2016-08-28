@@ -60,13 +60,15 @@ stars_2 = ds_list_create();
 
 numberOfStarsPerRegion = 25
 
-
 grid_size_x = 10240
 grid_size_y = 7680
 
 grid_regions_x = 16
 grid_regions_y = 10
 
+globalvar star_array;
+
+star_array[grid_size_x - 1, grid_size_y-1] = 0;
 
 grid_region_size_x = grid_size_x/grid_regions_x
 grid_region_size_y = grid_size_y/grid_regions_y
@@ -77,10 +79,12 @@ randomize();
 for (i = 0; i &lt; grid_regions_x; i++) {
     for (j = 0; j &lt; grid_regions_y; j++) {
         for (k = 0; k &lt; numberOfStarsPerRegion; k++) {
-            x_random = random_range(i * grid_region_size_x, (i+1) * grid_region_size_x);
-            y_random = random_range(j * grid_region_size_y, (j+1) * grid_region_size_y);
+            x_random = round(random_range(i * grid_region_size_x, (i+1) * grid_region_size_x));
+            y_random = round(random_range(j * grid_region_size_y, (j+1) * grid_region_size_y));
             
             inst = instance_create (x_random, y_random, estrelaTest);
+            
+            star_array [x_random, y_random] = 1;
             
             with (inst) {
                 max_size = 1
