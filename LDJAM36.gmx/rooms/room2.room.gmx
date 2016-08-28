@@ -96,6 +96,11 @@
     <instance objName="cometa" x="960" y="2592" name="inst_5FF9C6E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cometa" x="2784" y="3072" name="inst_EF7B3657" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cometa" x="3840" y="2336" name="inst_29A3FDE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Lightning" x="128" y="0" name="inst_B5C91B2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="borderx" x="0" y="384" name="inst_5F2D96E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="borderx" x="0" y="7296" name="inst_D81A409E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bordery" x="512" y="0" name="inst_191330B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bordery" x="9728" y="0" name="inst_44D038DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

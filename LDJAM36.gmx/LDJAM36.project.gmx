@@ -24,6 +24,8 @@
     <sprite>sprites\candleLight</sprite>
     <sprite>sprites\compass</sprite>
     <sprite>sprites\sprite15</sprite>
+    <sprite>sprites\boarderx</sprite>
+    <sprite>sprites\boardery</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_level</background>
@@ -63,10 +65,12 @@
       <object>objects\obj_player_ripple</object>
     </objects>
     <object>objects\Lightning</object>
+    <object>objects\borderx</object>
+    <object>objects\bordery</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\otavioTest</room>
     <room>rooms\room2</room>
+    <room>rooms\otavioTest</room>
     <room>rooms\rm_ripple</room>
   </rooms>
   <help>
