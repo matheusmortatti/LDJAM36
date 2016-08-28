@@ -58,7 +58,7 @@ stars_2 = ds_list_create();
     Star Generator: By Strings
 */
 
-numberOfStarsPerRegion = 30
+numberOfStarsPerRegion = 25
 
 
 grid_size_x = 10240
