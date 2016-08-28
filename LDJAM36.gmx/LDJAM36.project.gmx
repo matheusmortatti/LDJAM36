@@ -65,8 +65,8 @@
     <object>objects\Lightning</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\otavioTest</room>
     <room>rooms\room2</room>
+    <room>rooms\otavioTest</room>
     <room>rooms\rm_ripple</room>
   </rooms>
   <help>
