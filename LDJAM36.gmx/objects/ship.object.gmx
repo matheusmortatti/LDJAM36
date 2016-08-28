@@ -151,7 +151,6 @@ Strings : sistema de tempo
 */
 
 timeLeft -= (delta_time / power(10,6));
-show_debug_message(string(timeLeft));
 if (timeLeft &lt;= 0) {
     room_restart();
 }
