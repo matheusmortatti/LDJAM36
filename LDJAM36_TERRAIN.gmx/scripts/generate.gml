@@ -14,9 +14,9 @@ for(var i = 0; i < width; i++)
         var distanceX = (center_x-i)*(center_x-i);
         var distanceY = (center_y-j)*(center_y-j);
         
-        var distanceToCenter = sqrt(distanceX+distanceY)*block_size*2;
+        var distanceToCenter = sqrt(distanceX+distanceY)*block_size;
         
-        if (distanceToCenter < 250) {
+        if (distanceToCenter < 175) {
             var zz = getPerlinNoise(i, j, 100, block_size);
             grid[# i, j] = abs(distanceToCenter-zz);
         }
