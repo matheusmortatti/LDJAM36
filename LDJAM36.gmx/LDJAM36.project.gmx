@@ -74,11 +74,8 @@
     <object>objects\Lightning</object>
     <object>objects\borderx</object>
     <object>objects\bordery</object>
-<<<<<<< HEAD
     <object>objects\menuControl</object>
-=======
     <object>objects\soundBox</object>
->>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
