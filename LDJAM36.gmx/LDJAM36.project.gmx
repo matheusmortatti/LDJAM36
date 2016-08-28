@@ -21,6 +21,7 @@
     <sprite>sprites\velaBarco</sprite>
     <sprite>sprites\comet</sprite>
     <sprite>sprites\spr_walk</sprite>
+    <sprite>sprites\candleLight</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_level</background>
@@ -33,6 +34,7 @@
   <shaders name="shaders">
     <shader type="GLSLES">shaders\waterRipple.shader</shader>
     <shader type="GLSLES">shaders\shd_ripple.shader</shader>
+    <shader type="GLSLES">shaders\light_shd_mult.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -57,6 +59,7 @@
       <object>objects\obj_controller_ripple</object>
       <object>objects\obj_player_ripple</object>
     </objects>
+    <object>objects\Lightning</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\otavioTest</room>

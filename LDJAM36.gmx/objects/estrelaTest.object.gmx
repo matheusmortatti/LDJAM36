@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>isClicked = false;
+
+image_speed=random_range(0.01, 0.15);
+image_index=irandom(4);
 </string>
           </argument>
         </arguments>
