@@ -33,6 +33,7 @@
     <sprite>sprites\boardery</sprite>
     <sprite>sprites\arrow</sprite>
     <sprite>sprites\title_screen</sprite>
+    <sprite>sprites\base_compass</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_level</background>
