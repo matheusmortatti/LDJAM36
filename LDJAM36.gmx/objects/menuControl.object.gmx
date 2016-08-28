@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>menu[0] = "To Honor!";
-menu[1] = "I Cower!";
+            <string>_menu[0] = "To Honor!";
+_menu[1] = "I Cower!";
 
 space = 256;
 mpos = 0;
@@ -90,12 +90,12 @@ else if ((push) &amp;&amp; (mpos)) game_end();
             <kind>1</kind>
             <string>draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
-draw_set_font(font1);
-draw_set_color(c_black);
+draw_set_font(font0);
+draw_set_color(c_white);
 
 var cont;
 for (cont = 0; cont &lt;= 1; cont++) {
-    draw_text(x + (cont * space), y, string(menu[cont]));
+    draw_text(x + (cont * space), y, string(_menu[cont]));
 }
 
 draw_sprite(arrow, 0, x + (mpos * space)-64 , y);
