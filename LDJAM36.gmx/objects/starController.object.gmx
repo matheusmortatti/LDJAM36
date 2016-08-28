@@ -58,7 +58,7 @@ stars_2 = ds_list_create();
     Star Generator: By Strings
 */
 
-numberOfStarsPerRegion = 30
+numberOfStarsPerRegion = 10
 
 
 grid_size_x = 10240
@@ -84,7 +84,7 @@ for (i = 0; i &lt; grid_regions_x; i++) {
             
             with (inst) {
                 max_size = 1
-                min_size = 0.3
+                min_size = 0.5
                 
                 random_size = random_range (min_size, max_size);
                 image_xscale = random_size;

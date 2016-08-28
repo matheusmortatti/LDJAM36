@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -37,100 +37,8 @@ instance_activate_region (view_xview - 32, view_yview - 32, view_wview + 32,
 //instance_activate_object(camera_controller);
 instance_activate_object(wind);
 instance_activate_object(starController);
-instance_activate_object(HUD);
-instance_activate_object(camera_controller);
 instance_activate_object(obj_controller_ripple);
 instance_activate_object(obj_player_ripple);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>boat_x = ship.x
-boat_y = ship.y
-
-//alarm[0] = 30
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-if (abs(boat_x - ship.x) &gt; 128 || abs(boat_y - ship.y) &gt; 128) {
-
-    boat_x = ship.x;
-    boat_y = ship.y;
-
-    x = view_xview + view_wview/2;
-    y = view_yview + view_hview/2;
-    
-    instance_deactivate_region(view_xview - 256, view_yview - 256, view_wview + 256,
-                                view_hview + 256, false, true );
-    
-    instance_activate_region (view_xview - 128, view_yview - 128, view_wview + 128,
-                                view_hview + 128, true);
-                                
-    //instance_activate_object(camera_controller);
-    instance_activate_object(wind);
-    instance_activate_object(starController);
-    instance_activate_object(HUD);
-    instance_activate_object(camera_controller);
-    instance_activate_object(obj_controller_ripple);
-    instance_activate_object(obj_player_ripple);
-    }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//alarm[0] = 30
 </string>
           </argument>
         </arguments>

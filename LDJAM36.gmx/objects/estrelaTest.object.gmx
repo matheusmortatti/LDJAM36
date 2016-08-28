@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mouse_check_button_released(mb_left) &amp;&amp; isClicked)
+            <string>show_debug_message("Very well -- estrela step" );
+if (mouse_check_button_released(mb_left) &amp;&amp; isClicked)
    {
    inst = instance_place(mouse_x, mouse_y, estrelaTest);
    if (inst != noone){
