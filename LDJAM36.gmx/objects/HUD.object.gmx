@@ -50,7 +50,8 @@ y = view_yview + view_hview/2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(768, 576, "FOOD: " + string(ship.timeLeft));
+            <string>depth= -1000;
+draw_text(768, 576, "FOOD: " + string(ship.timeLeft));
 draw_text(256, 194, "Wind Strenght: " + string(wind.windStr));
 draw_text(256, 154, "Ship Speed: " + string(ship.speed));
 draw_text(768, 194, "Wind Direction: " + string(wind.windDir));

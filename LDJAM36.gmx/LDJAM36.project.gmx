@@ -8,6 +8,7 @@
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\compass</sprite>
     <sprite>sprites\barcoSprt</sprite>
     <sprite>sprites\otavioTestSprite2</sprite>
     <sprite>sprites\ilhaFeliz</sprite>
@@ -65,8 +66,8 @@
     <object>objects\Lightning</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\otavioTest</room>
     <room>rooms\room2</room>
+    <room>rooms\otavioTest</room>
     <room>rooms\rm_ripple</room>
   </rooms>
   <help>
