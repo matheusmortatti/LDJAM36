@@ -10,7 +10,11 @@
   <persistent>0</persistent>
   <colour>16777215</colour>
   <showcolour>0</showcolour>
-  <code></code>
+  <code>globalvar spawn_x;
+globalvar spawn_y;
+
+spawn_x=5100;
+spawn_y=3000;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

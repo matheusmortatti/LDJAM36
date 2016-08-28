@@ -48,7 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>friction = 0.1;
+            <string>x=ship.x;
+y=ship.y;
+friction = 0.1;
 
 speed = ship.speed;
 direction = ship.direction;

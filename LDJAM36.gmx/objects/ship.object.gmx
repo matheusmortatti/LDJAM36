@@ -152,7 +152,9 @@ Strings : sistema de tempo
 
 timeLeft -= (delta_time / power(10,6));
 if (timeLeft &lt;= 0) {
-    game_restart();
+    x=spawn_x;
+    y=spawn_y;
+    timeLeft=50;
 }
 </string>
           </argument>
