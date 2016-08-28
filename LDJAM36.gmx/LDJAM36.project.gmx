@@ -32,6 +32,7 @@
     <sprite>sprites\boarderx</sprite>
     <sprite>sprites\boardery</sprite>
     <sprite>sprites\arrow</sprite>
+    <sprite>sprites\title_screen</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_level</background>
@@ -40,6 +41,8 @@
       <background>background\bac_refraction_diffuse</background>
     </backgrounds>
     <background>background\background3</background>
+    <background>background\menu</background>
+    <background>background\flag</background>
   </backgrounds>
   <paths name="paths"/>
   <shaders name="shaders">
@@ -78,6 +81,7 @@
     <object>objects\soundBox</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\main_menu</room>
     <room>rooms\room2</room>
     <room>rooms\otavioTest</room>
     <room>rooms\rm_ripple</room>
