@@ -22,6 +22,8 @@
     <sprite>sprites\comet</sprite>
     <sprite>sprites\spr_walk</sprite>
     <sprite>sprites\candleLight</sprite>
+    <sprite>sprites\compass</sprite>
+    <sprite>sprites\sprite15</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_level</background>
@@ -29,6 +31,7 @@
       <background>background\bac_refraction_normal</background>
       <background>background\bac_refraction_diffuse</background>
     </backgrounds>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <shaders name="shaders">
@@ -63,6 +66,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\otavioTest</room>
+    <room>rooms\room2</room>
     <room>rooms\rm_ripple</room>
   </rooms>
   <help>

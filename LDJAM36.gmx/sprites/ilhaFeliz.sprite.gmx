@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>-1</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>14</bbox_left>
-  <bbox_right>125</bbox_right>
-  <bbox_top>8</bbox_top>
-  <bbox_bottom>127</bbox_bottom>
+  <bbox_left>30</bbox_left>
+  <bbox_right>248</bbox_right>
+  <bbox_top>2</bbox_top>
+  <bbox_bottom>254</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>128</width>
-  <height>128</height>
+  <width>256</width>
+  <height>256</height>
   <frames>
     <frame index="0">images\ilhaFeliz_0.png</frame>
   </frames>
