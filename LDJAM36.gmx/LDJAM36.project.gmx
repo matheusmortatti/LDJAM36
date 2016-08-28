@@ -26,6 +26,7 @@
     <sprite>sprites\sprite15</sprite>
     <sprite>sprites\boarderx</sprite>
     <sprite>sprites\boardery</sprite>
+    <sprite>sprites\arrow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bac_level</background>
@@ -43,6 +44,7 @@
   </shaders>
   <fonts name="fonts">
     <font>fonts\font0</font>
+    <font>fonts\font1</font>
   </fonts>
   <objects name="objects">
     <object>objects\wind</object>
@@ -67,6 +69,7 @@
     <object>objects\Lightning</object>
     <object>objects\borderx</object>
     <object>objects\bordery</object>
+    <object>objects\menuControl</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
