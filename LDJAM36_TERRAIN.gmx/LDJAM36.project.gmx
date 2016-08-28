@@ -6,7 +6,14 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\green_1</background>
+    <background>background\grey_1</background>
+    <background>background\grey_2</background>
+    <background>background\blue_1</background>
+    <background>background\blue_2</background>
+    <background>background\blue_3</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\generate.gml</script>
