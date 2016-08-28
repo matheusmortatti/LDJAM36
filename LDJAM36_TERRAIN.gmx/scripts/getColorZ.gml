@@ -4,13 +4,13 @@ var zz = clamp(argument[0], 0, 240);
 var r = 0, b = 0, g = 0, a = 1;
 var col = -1;
 
-if (zz >50 or zz == 0) {
+if (zz >60 or zz == 0) {
     /*a = 0.8 - zz/255;
     b = 255
     g = 255 - (zz-50)/205 * 200;*/
      col = 2;
 }
-else if(zz <=50 and zz > 40) {
+else if(zz <=60 and zz > 40) {
     /*b = clamp(zz+50, 0, 255);
     g = abs(200-zz);
     r = 200 - abs(200-zz);*/

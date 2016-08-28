@@ -28,31 +28,32 @@
             <string>randomize();
 seed = round(random_range(1000000, 10000000));
 
-block_size = 6;
+block_size = 8;
 
 width = room_width / block_size;
 height = room_height / block_size;
 
 var max_islands_x = irandom_range(7, 7);
-var max_islands_y = irandom_range(4,4);
+var max_islands_y = irandom_range(3,3);
 grid = ds_grid_create(width+1, height+1);
 var center_x;
 var center_y;
 
 can_draw = true;
 
-var isle_coord_x;
-var isle_coord_y;
+isle_coord_x=0;
+isle_coord_y=0;
+var minDist = 700;
 
 for(var i = 1; i &lt; max_islands_x; i++)
 {    
-    for(var j = 1; j &lt; max_islands_y-1; j++) {
-        center_x = (i/max_islands_x * room_width)/block_size;
-        center_y = (((j+irandom(1))/max_islands_y) * room_height)/block_size;
+    for(var j = 1; j &lt; max_islands_y; j++) {
+        center_x = (i/max_islands_x * room_width + irandom_range(-50, 50))/block_size;
+        center_y = ((j-1)*minDist + irandom_range(-300*(j-1)+100, 500))/block_size; //(((j+irandom(1))/max_islands_y) * room_height)/block_size;
         isle_coord_x[i-1] = center_x;
-        isle_coord_x[j-1] = center_y;
+        isle_coord_y[i-1] = center_y;
         generate(width, height, grid, block_size, center_x, center_y);
-
+        
     }
 }
 
