@@ -17,6 +17,7 @@
     <sprite>sprites\kraken_tentacle</sprite>
     <sprite>sprites\corpoBarco</sprite>
     <sprite>sprites\velaBarco</sprite>
+    <sprite>sprites\comet</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -38,6 +39,7 @@
     <object>objects\krakenTrap</object>
     <object>objects\krakenTentacle</object>
     <object>objects\RegionController</object>
+    <object>objects\cometa</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\otavioTest</room>
