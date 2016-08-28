@@ -8,6 +8,7 @@
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\compass</sprite>
     <sprite>sprites\barcoSprt</sprite>
     <sprite>sprites\otavioTestSprite2</sprite>
     <sprite>sprites\ilhaFeliz</sprite>

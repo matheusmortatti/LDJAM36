@@ -28,11 +28,11 @@
             <string>x = view_xview + view_wview/2;
 y = view_yview + view_hview/2;
 
-instance_deactivate_region(view_xview - 512, view_yview - 512, view_wview + 512,
-                            view_hview + 512, false, true );
+instance_deactivate_region(view_xview - 1024, view_yview - 1024, view_wview + 2048,
+                            view_hview + 2048, false, true );
 
-instance_activate_region (view_xview - 512, view_yview - 512, view_wview + 512,
-                            view_hview + 512, true);
+instance_activate_region (view_xview - 1024, view_yview - 1024, view_wview + 2048,
+                            view_hview + 2048, true);
                             
 //instance_activate_object(camera_controller);
 instance_activate_object(wind);
