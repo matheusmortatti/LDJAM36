@@ -29,6 +29,7 @@
 
 light_surface = surface_create(view_wview[0], view_hview[0]);
 
+
 application_surface_draw_enable(false);
 
 uniform_ambient = shader_get_uniform(light_shd_mult, "u_fAmbient");
