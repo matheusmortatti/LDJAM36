@@ -6,12 +6,17 @@
   <NewExtensions>
     <extension index="0">extensions\Free Shaders</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+    <sound>sound\sound1</sound>
+    <sound>sound\sound2</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\barcoSprt</sprite>
     <sprite>sprites\otavioTestSprite2</sprite>
     <sprite>sprites\ilhaFeliz</sprite>
     <sprite>sprites\otavioTestSprite3</sprite>
+    <sprite>sprites\estrelinha3</sprite>
     <sprite>sprites\estrelinha</sprite>
     <sprite>sprites\stormSprite</sprite>
     <sprite>sprites\monster</sprite>
@@ -69,7 +74,11 @@
     <object>objects\Lightning</object>
     <object>objects\borderx</object>
     <object>objects\bordery</object>
+<<<<<<< HEAD
     <object>objects\menuControl</object>
+=======
+    <object>objects\soundBox</object>
+>>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
