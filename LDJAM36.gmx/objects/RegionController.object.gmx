@@ -28,11 +28,11 @@
             <string>x = view_xview + view_wview/2;
 y = view_yview + view_hview/2;
 
-instance_deactivate_region(view_xview - 64, view_yview - 64, view_wview + 64,
-                            view_hview + 64, false, true );
+instance_deactivate_region(view_xview - 512, view_yview - 512, view_wview + 512,
+                            view_hview + 512, false, true );
 
-instance_activate_region (view_xview - 32, view_yview - 32, view_wview + 32,
-                            view_hview + 32, true);
+instance_activate_region (view_xview - 512, view_yview - 512, view_wview + 512,
+                            view_hview + 512, true);
                             
 //instance_activate_object(camera_controller);
 instance_activate_object(wind);
@@ -88,7 +88,7 @@ boat_y = ship.y
           <argument>
             <kind>1</kind>
             <string>
-if (abs(boat_x - ship.x) &gt; 128 || abs(boat_y - ship.y) &gt; 128) {
+if (abs(boat_x - ship.x) &gt; 256 || abs(boat_y - ship.y) &gt; 256) {
 
     boat_x = ship.x;
     boat_y = ship.y;
@@ -96,11 +96,11 @@ if (abs(boat_x - ship.x) &gt; 128 || abs(boat_y - ship.y) &gt; 128) {
     x = view_xview + view_wview/2;
     y = view_yview + view_hview/2;
     
-    instance_deactivate_region(view_xview - 256, view_yview - 256, view_wview + 256,
-                                view_hview + 256, false, true );
+    instance_deactivate_region(view_xview - 1024, view_yview - 2048, view_wview + 2048,
+                                view_hview + 2048, false, true );
     
-    instance_activate_region (view_xview - 128, view_yview - 128, view_wview + 128,
-                                view_hview + 128, true);
+    instance_activate_region (view_xview - 1024, view_yview - 1024, view_wview + 2048,
+                                view_hview + 2048, true);
                                 
     //instance_activate_object(camera_controller);
     instance_activate_object(wind);
