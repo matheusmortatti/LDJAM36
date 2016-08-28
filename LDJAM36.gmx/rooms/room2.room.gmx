@@ -101,6 +101,7 @@
     <instance objName="borderx" x="0" y="7296" name="inst_D81A409E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bordery" x="512" y="0" name="inst_191330B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bordery" x="9728" y="0" name="inst_44D038DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="soundBox" x="128" y="192" name="inst_9C45CC88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
