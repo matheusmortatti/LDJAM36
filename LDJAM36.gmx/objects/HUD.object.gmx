@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>x = view_xview + view_wview/2;
 y = view_yview + view_hview/2;
+
 </string>
           </argument>
         </arguments>
@@ -54,6 +55,7 @@ draw_text(256, 194, "Wind Strenght: " + string(wind.windStr));
 draw_text(256, 154, "Ship Speed: " + string(ship.speed));
 draw_text(768, 194, "Wind Direction: " + string(wind.windDir));
 draw_text(768, 154, "Ship Direction: " + string(ship.direction));
+draw_sprite_ext(compass, -1, 32, 32, 2, 2, ship.direction, c_white, 1);
 </string>
           </argument>
         </arguments>

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>direction = wind.windDir;
+image_speed=0.2
 </string>
           </argument>
         </arguments>
