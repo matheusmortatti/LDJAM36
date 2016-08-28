@@ -3,7 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Free Shaders</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\barcoSprt</sprite>
@@ -18,12 +20,23 @@
     <sprite>sprites\corpoBarco</sprite>
     <sprite>sprites\velaBarco</sprite>
     <sprite>sprites\comet</sprite>
+    <sprite>sprites\spr_walk</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bac_level</background>
+    <backgrounds name="Group_refraction">
+      <background>background\bac_refraction_normal</background>
+      <background>background\bac_refraction_diffuse</background>
+    </backgrounds>
+  </backgrounds>
   <paths name="paths"/>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\waterRipple.shader</shader>
+    <shader type="GLSLES">shaders\shd_ripple.shader</shader>
   </shaders>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <object>objects\wind</object>
     <object>objects\ship</object>
@@ -39,9 +52,14 @@
     <object>objects\krakenTrap</object>
     <object>objects\krakenTentacle</object>
     <object>objects\cometa</object>
+    <objects name="Group_ripple">
+      <object>objects\obj_controller_ripple</object>
+      <object>objects\obj_player_ripple</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\otavioTest</room>
+    <room>rooms\rm_ripple</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
