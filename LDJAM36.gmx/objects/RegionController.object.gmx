@@ -27,33 +27,16 @@
             <kind>1</kind>
             <string>x = view_xview + view_wview/2;
 y = view_yview + view_hview/2;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_text(768, 576, "FOOD: " + string(ship.timeLeft));
-draw_text(256, 194, "Wind Strenght: " + string(wind.windStr));
-draw_text(256, 154, "Ship Speed: " + string(ship.speed));
-draw_text(768, 194, "Wind Direction: " + string(wind.windDir));
-draw_text(768, 154, "Ship Direction: " + string(ship.direction));
+
+instance_deactivate_region(view_xview - 64, view_yview - 64, view_wview + 64,
+                            view_hview + 64, false, true );
+
+instance_activate_region (view_xview - 32, view_yview - 32, view_wview + 32,
+                            view_hview + 32, true);
+                            
+//instance_activate_object(camera_controller);
+instance_activate_object(wind);
+instance_activate_object(starController);
 </string>
           </argument>
         </arguments>
