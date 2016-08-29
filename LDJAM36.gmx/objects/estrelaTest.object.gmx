@@ -71,10 +71,10 @@ image_index=irandom(4);
             ds_list_add(stars_1, self.id);
             ds_list_add(stars_2, inst);
         }
-   }
-   audio_play_sound(global.starsv[global.stars],0,0);
+        audio_play_sound(global.starsv[global.stars],0,0);
+        playStar();
+   }  
    isClicked = false;
-   playStar();
    }
 </string>
           </argument>
