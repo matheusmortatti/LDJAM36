@@ -60,6 +60,7 @@
   <objects name="objects">
     <object>objects\wind</object>
     <object>objects\ship</object>
+    <object>objects\ship_menu</object>
     <object>objects\velaIndependente</object>
     <object>objects\colisaoTeste</object>
     <object>objects\colisaoFeliz</object>
