@@ -162,6 +162,70 @@ if (timeLeft &lt;= 0) {
     death="Hunger"
     message="Generation " + string(n_generation) + " : Death by " + string(death);
 }
+
+if (n_generation &gt; 6) {
+    game_restart();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="stone2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+x=spawn_x;
+    y=spawn_y;
+    timeLeft=50;
+    n_generation++;
+    death="crashing into stones!";
+    message="Generation " + string(n_generation) + " : Death by " + string(death);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="stone1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+x=spawn_x;
+    y=spawn_y;
+    timeLeft=50;
+    n_generation++;
+    death="crashing into rocks!";
+    message="Generation " + string(n_generation) + " : Death by " + string(death);
+
 </string>
           </argument>
         </arguments>
