@@ -157,9 +157,9 @@ if (timeLeft &lt;= 0) {
     y=spawn_y;
 
     deaths++;
-    timeLeft=5;
+    timeLeft=50;
     n_generation++;
-    death="hunger"
+    death="Hunger"
     message="Generation " + string(n_generation) + " : Death by " + string(death);
 }
 </string>
@@ -236,7 +236,7 @@ direction += 0.1;
     y=spawn_y;
     timeLeft=50;
     n_generation++;
-    death="hunger"
+    death="Kraken"
     message="Generation " + string(n_generation) + " : Death by " + string(death);
 
 </string>
@@ -266,7 +266,7 @@ x=spawn_x;
     y=spawn_y;
     timeLeft=50;
     n_generation++;
-    death="hunger"
+    death="Sea Monster"
     message="Generation " + string(n_generation) + " : Death by " + string(death);
 
 </string>
@@ -345,7 +345,7 @@ direction += 0.1;
     y=spawn_y;
     timeLeft=50;
     n_generation++;
-    death="hunger"
+    death="Ship Skinking"
     message="Generation " + string(n_generation) + " : Death by " + string(death);
 
 </string>
