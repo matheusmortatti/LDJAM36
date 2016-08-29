@@ -10,6 +10,11 @@
     <sound>sound\sound0</sound>
     <sound>sound\sound1</sound>
     <sound>sound\sound2</sound>
+    <sound>sound\star1</sound>
+    <sound>sound\star2</sound>
+    <sound>sound\star3</sound>
+    <sound>sound\star4</sound>
+    <sound>sound\star5</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\barcoSprt</sprite>
@@ -46,6 +51,9 @@
     <background>background\flag</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\playStar.gml</script>
+  </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\waterRipple.shader</shader>
     <shader type="GLSLES">shaders\shd_ripple.shader</shader>
