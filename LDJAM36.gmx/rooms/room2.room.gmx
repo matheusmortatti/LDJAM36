@@ -117,6 +117,7 @@ message=""</code>
     <instance objName="colisaoFeliz" x="7776" y="6432" name="inst_70E72DDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="colisaoFeliz" x="6752" y="1216" name="inst_C2AF6309" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="wind" x="5216" y="2816" name="inst_C327534B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SeaMonster" x="5152" y="3040" name="inst_1F1CCB0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="5504" y="2784" w="16" h="16" xo="0" yo="0" id="10000038" name="inst_F52C2007" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

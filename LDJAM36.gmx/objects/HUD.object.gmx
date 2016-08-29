@@ -84,17 +84,17 @@ message_current=message;
             <kind>1</kind>
             <string>depth= -1000;
 draw_set_font(font1);
-draw_set_colour(c_yellow);
+draw_set_colour(c_white);
 
-draw_text(768, 576, "FOOD: " + string(ship.timeLeft));
+draw_text(50, 700, "FOOD: " + string(ship.timeLeft));
 
-if (ship.deaths &gt; 0) draw_sprite_ext(compass, -1, 128, 640, 2, 2, -ship.direction+90, c_white, 1);
-if (ship.deaths &gt; 1) draw_text(768, 154, "Ship Direction: " + string(ship.direction));
-if (ship.deaths &gt; 2) draw_text(768, 194, "Wind Direction: " + string(wind.windDir));
-if (ship.deaths &gt; 3) draw_text(256, 154, "Ship Speed: " + string(ship.speed));
-if (ship.deaths &gt; 4) draw_text(256, 194, "Wind Strenght: " + string(wind.windStr));
+if (n_generation &gt; 0){  draw_sprite_ext(base_compass, -1, 68, 560, 2, 2,-1, c_white, 1); draw_sprite_ext(compass, -1, 128, 628, 2, 2, -ship.direction+90, c_white, 1);}
+if (n_generation &gt; 1) draw_text(700, 50, "Ship Direction: " + string(ship.direction));
+if (n_generation &gt; 2) draw_text(700, 100, "Wind Direction: " + string(wind.windDir));
+if (n_generation &gt; 3) draw_text(50, 50, "Ship Speed: " + string(ship.speed));
+if (n_generation &gt; 4) draw_text(50, 100, "Wind Strenght: " + string(wind.windStr));
 
-draw_sprite_ext(base_compass, -1, 20, 20, 2, 2,-1, c_white, 1);
+
 
 if (timer&lt;max_time)
 {
