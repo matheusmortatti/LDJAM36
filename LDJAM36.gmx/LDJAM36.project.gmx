@@ -27,6 +27,7 @@
     <sprite>sprites\monster</sprite>
     <sprite>sprites\kraken_trap</sprite>
     <sprite>sprites\kraken_tentacle</sprite>
+    <sprite>sprites\corpoBarco2</sprite>
     <sprite>sprites\corpoBarco</sprite>
     <sprite>sprites\velaBarco</sprite>
     <sprite>sprites\comet</sprite>
