@@ -3,7 +3,7 @@
   <spriteName>corpoBarco</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -51,6 +51,7 @@
 */
 
 timeLeft = 45;
+deaths = 0;
 </string>
           </argument>
         </arguments>
@@ -154,7 +155,8 @@ timeLeft -= (delta_time / power(10,6));
 if (timeLeft &lt;= 0) {
     x=spawn_x;
     y=spawn_y;
-    timeLeft=50;
+    deaths++;
+    timeLeft=5;
 }
 </string>
           </argument>

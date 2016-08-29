@@ -51,12 +51,25 @@ y = view_yview + view_hview/2;
           <argument>
             <kind>1</kind>
             <string>depth= -1000;
+draw_set_font(font1);
+draw_set_colour(c_yellow);
+
 draw_text(768, 576, "FOOD: " + string(ship.timeLeft));
-draw_text(256, 194, "Wind Strenght: " + string(wind.windStr));
-draw_text(256, 154, "Ship Speed: " + string(ship.speed));
-draw_text(768, 194, "Wind Direction: " + string(wind.windDir));
-draw_text(768, 154, "Ship Direction: " + string(ship.direction));
-draw_sprite_ext(compass, -1, 32, 32, 2, 2,ship.direction, c_white, 1);
+
+if (ship.deaths &gt; 0) draw_sprite_ext(compass, -1, 128, 640, 2, 2, -ship.direction+90, c_white, 1);
+if (ship.deaths &gt; 1) draw_text(768, 154, "Ship Direction: " + string(ship.direction));
+if (ship.deaths &gt; 2) draw_text(768, 194, "Wind Direction: " + string(wind.windDir));
+if (ship.deaths &gt; 3) draw_text(256, 154, "Ship Speed: " + string(ship.speed));
+if (ship.deaths &gt; 4) draw_text(256, 194, "Wind Strenght: " + string(wind.windStr));
+
+draw_sprite_ext(base_compass, -1, 20, 20, 2, 2,-1, c_white, 1);
+
+if (timer&lt;max_time)
+{
+   draw_text(300, 600, message_current);
+   timer++;
+}
+
 </string>
           </argument>
         </arguments>
