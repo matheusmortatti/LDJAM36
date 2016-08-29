@@ -92,11 +92,11 @@ if angle_difference(wind.windDir, direction) &gt; 135 {
     opFlag = 1;
 }
 
-if keyboard_check(vk_left) direction += 1.0;
+if (max(keyboard_check(vk_left), keyboard_check(ord("A")), 0)) direction += 1.0;
 
-if keyboard_check(vk_right) direction -= 1.0;
+if (max(keyboard_check(vk_right), keyboard_check(ord("D")), 0)) direction -= 1.0;
 
-if keyboard_check(vk_up) {
+if (max(keyboard_check(vk_up), keyboard_check(ord("W")), 0)) {
     if (dirFlag) {
         if (speed &lt; wind.windStr*1.0) {
             speed += 0.2;
