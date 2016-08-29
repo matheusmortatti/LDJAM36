@@ -193,7 +193,7 @@ x=spawn_x;
     y=spawn_y;
     timeLeft=50;
     n_generation++;
-    death="crashing into stones!";
+    death="Shipwrecking";
     message="Generation " + string(n_generation) + " : Death by " + string(death);
 
 </string>
@@ -223,7 +223,7 @@ x=spawn_x;
     y=spawn_y;
     timeLeft=50;
     n_generation++;
-    death="crashing into rocks!";
+    death="Shipwrecking";
     message="Generation " + string(n_generation) + " : Death by " + string(death);
 
 </string>
@@ -409,7 +409,7 @@ direction += 0.1;
     y=spawn_y;
     timeLeft=50;
     n_generation++;
-    death="Ship Skinking"
+    death="Shipwrecking"
     message="Generation " + string(n_generation) + " : Death by " + string(death);
 
 </string>

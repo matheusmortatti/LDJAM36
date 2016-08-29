@@ -30,7 +30,7 @@ test =1.0;
 image_speed=random_range(0.01, 0.15);
 image_index=irandom(4);
 
-image_xscale=random_range(0.5, 1);
+image_xscale=random_range(0.5, 0.8);
 image_yscale=image_xscale;
 </string>
           </argument>
