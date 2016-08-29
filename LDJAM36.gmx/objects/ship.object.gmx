@@ -78,6 +78,8 @@ deaths = 0;
 Otavio : movimentacao do navio
 */
 
+show_debug_message(string(direction));
+
 var dirFlag, opFlag;
 dirFlag = 0;
 opFlag = 0;
@@ -356,7 +358,8 @@ x=spawn_x;
           <argument>
             <kind>1</kind>
             <string>speed = wind.windStr*3;
-if (direction != wind.windDir) direction += 1;
+//if (direction != wind.windDir)
+    direction += 20;
 </string>
           </argument>
         </arguments>
@@ -379,10 +382,11 @@ if (direction != wind.windDir) direction += 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (timeLeft &lt; 35) timeLeft += 15;
+            <string>timeLeft = 40;
 
-speed = 0;
-direction += 0.1;
+speed = 0.5;
+
+direction += 1;
 </string>
           </argument>
         </arguments>

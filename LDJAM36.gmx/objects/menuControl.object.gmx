@@ -53,8 +53,8 @@ mpos = 0;
           <argument>
             <kind>1</kind>
             <string>var move = 0;
-move -= (max(keyboard_check(vk_left), keyboard_check_pressed(ord("A")), 0)); 
-move += (max(keyboard_check(vk_right), keyboard_check_pressed(ord("D")), 0)); 
+move -= (max(keyboard_check_pressed(vk_left), keyboard_check_pressed(ord("A")), 0)); 
+move += (max(keyboard_check_pressed(vk_right), keyboard_check_pressed(ord("D")), 0)); 
 
 if (move != 0) {
     mpos += move;

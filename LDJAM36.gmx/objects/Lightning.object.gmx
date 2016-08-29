@@ -86,7 +86,7 @@ draw_clear_alpha(make_color_rgb(9, 33, 75), 1);
 draw_set_blend_mode(bm_add);
 
 
-draw_sprite_ext(candleLight, -1, 512, 384, 4, 4, 0, make_color_rgb(255, 200, 87), 1);
+draw_sprite_ext(candleLight, -1, 512, 384, 1, 1, 0, make_color_rgb(255, 200, 87), 1);
                                 
 size = ds_list_size (light_sources_x);
 for (i = 0; i &lt; size; i++) {
@@ -106,7 +106,7 @@ for (i = 0; i &lt; size; i++) {
 
     //if (screen_x &gt; 0 &amp;&amp; screen_x &lt; view_wview[0] &amp;&amp; screen_y &gt; 0 &amp;&amp; screen_y &lt; view_hview[0])
         draw_sprite_ext(candleLight, -1, screen_x, screen_y,
-                    0.2, 0.2,  0,make_color_rgb(255, 200, 87), 1); 
+                    0.3, 0.3,  0,make_color_rgb(255, 200, 87), 1); 
 }
 
 draw_set_blend_mode(bm_normal);

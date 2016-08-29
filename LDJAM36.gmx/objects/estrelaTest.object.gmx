@@ -207,7 +207,7 @@ if (flag == 1) {
           <argument>
             <kind>1</kind>
             <string>if (isClicked) {
-    draw_set_colour(c_yellow);
+    draw_set_colour(c_white);
     draw_line_width(x, y, mouse_x, mouse_y,5);
     }
 </string>
@@ -230,8 +230,11 @@ if (flag == 1) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ds_list_insert(light_sources_x, 0, x);
-ds_list_insert(light_sources_y, 0, y);
+            <string>inst = instance_place(x, y, colisaoFeliz);
+if (inst == noone) {
+    ds_list_insert(light_sources_x, 0, x);
+    ds_list_insert(light_sources_y, 0, y);
+}
 </string>
           </argument>
         </arguments>

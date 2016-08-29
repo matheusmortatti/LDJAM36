@@ -187,7 +187,7 @@ for (i = 0; i &lt; ds_list_size(stars_1); i++) {
     s1 = ds_list_find_value(stars_1, i);
     s2 = ds_list_find_value(stars_2, i);
     draw_line_width_colour(s1.x, s1.y, s2.x, s2.y, 5,
-                            c_white, c_yellow);
+                            c_white, c_white);
 }
 </string>
           </argument>
