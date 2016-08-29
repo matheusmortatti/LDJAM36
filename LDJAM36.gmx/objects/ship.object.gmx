@@ -157,7 +157,7 @@ if (timeLeft &lt;= 0) {
     y=spawn_y;
 
     deaths++;
-    timeLeft=5;
+    timeLeft=50;
     n_generation++;
     death="Hunger"
     message="Generation " + string(n_generation) + " : Death by " + string(death);
