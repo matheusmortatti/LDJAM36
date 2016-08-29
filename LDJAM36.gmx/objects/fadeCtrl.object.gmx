@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-9999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,47 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>_menu[0] = "To Honor!";
-_menu[1] = "I Cower!";
-
-space = 256;
-mpos = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>var move = 0;
-move -= (max(keyboard_check_pressed(vk_left), keyboard_check_pressed(ord("A")), 0)); 
-move += (max(keyboard_check_pressed(vk_right), keyboard_check_pressed(ord("D")), 0)); 
-
-if (move != 0) {
-    mpos += move;
-    if (mpos &lt; 0) mpos = 1;
-    if (mpos &gt; 1) mpos = 0;
-}
-
-var push;
-push = (max(keyboard_check_pressed(vk_enter), keyboard_check_pressed(vk_space), 0));
-if ((push) &amp;&amp; (!mpos)) instance_create(0,0, fadeCtrl);
-else if ((push) &amp;&amp; (mpos)) game_end();
+            <string>a = 0;
+fade = 1;
 </string>
           </argument>
         </arguments>
@@ -88,17 +49,20 @@ else if ((push) &amp;&amp; (mpos)) game_end();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign(fa_left);
-draw_set_valign(fa_middle);
-draw_set_font(font1)
-draw_set_color(c_white);
+            <string>a = clamp(a + (fade*0.006), 0, 1);
 
-var cont;
-for (cont = 0; cont &lt;= 1; cont++) {
-    draw_text(x + (cont * space), y, string(_menu[cont]));
+if (a == 1) {
+    room_goto_next();
+    fade = -1;
 }
 
-draw_sprite(arrow, 0, x + (mpos * space)-64 , y);
+if ((a == 0) &amp;&amp; (fade == -1)) instance_destroy();
+
+draw_set_color(c_black);
+draw_set_alpha(a);
+draw_rectangle(view_xview[0], view_yview[0], view_xview[0] + view_wview[0], view_yview[0] + view_hview[0], 0);
+
+draw_set_alpha(1);
 </string>
           </argument>
         </arguments>

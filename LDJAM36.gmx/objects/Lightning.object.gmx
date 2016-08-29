@@ -86,7 +86,7 @@ draw_clear_alpha(make_color_rgb(9, 33, 75), 1);
 draw_set_blend_mode(bm_add);
 
 
-draw_sprite_ext(candleLight, -1, 512, 384, 1, 1, 0, make_color_rgb(255, 200, 87), 1);
+draw_sprite_ext(candleLight, -1, 512, 384, 2, 2, 0, make_color_rgb(255, 200, 87), 1);
                                 
 size = ds_list_size (light_sources_x);
 for (i = 0; i &lt; size; i++) {

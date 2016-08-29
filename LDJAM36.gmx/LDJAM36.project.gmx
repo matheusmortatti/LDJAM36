@@ -40,6 +40,7 @@
     <sprite>sprites\base_compass</sprite>
     <sprite>sprites\pedra1</sprite>
     <sprite>sprites\pedra2</sprite>
+    <sprite>sprites\cloudSprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background3</background>
@@ -77,12 +78,16 @@
     <object>objects\borderx</object>
     <object>objects\bordery</object>
     <object>objects\menuControl</object>
+    <object>objects\tutorial1</object>
+    <object>objects\object24</object>
     <object>objects\soundBox</object>
     <object>objects\stone1</object>
     <object>objects\stone2</object>
+    <object>objects\fadeCtrl</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
+    <room>rooms\tutorialRoom</room>
     <room>rooms\room2</room>
   </rooms>
   <help>

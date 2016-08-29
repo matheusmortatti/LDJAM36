@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>_menu[0] = "To Honor!";
-_menu[1] = "I Cower!";
+            <string>_menu[0] = "Move the ship with Arrows/WASD";
+_menu[1] = "Beware monsters, rocks and wild winds!";
 
 space = 256;
 mpos = 0;
@@ -52,20 +52,9 @@ mpos = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var move = 0;
-move -= (max(keyboard_check_pressed(vk_left), keyboard_check_pressed(ord("A")), 0)); 
-move += (max(keyboard_check_pressed(vk_right), keyboard_check_pressed(ord("D")), 0)); 
-
-if (move != 0) {
-    mpos += move;
-    if (mpos &lt; 0) mpos = 1;
-    if (mpos &gt; 1) mpos = 0;
-}
-
-var push;
+            <string>var push;
 push = (max(keyboard_check_pressed(vk_enter), keyboard_check_pressed(vk_space), 0));
-if ((push) &amp;&amp; (!mpos)) instance_create(0,0, fadeCtrl);
-else if ((push) &amp;&amp; (mpos)) game_end();
+if (push) instance_create(0,0, fadeCtrl);
 </string>
           </argument>
         </arguments>
