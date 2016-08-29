@@ -155,8 +155,12 @@ timeLeft -= (delta_time / power(10,6));
 if (timeLeft &lt;= 0) {
     x=spawn_x;
     y=spawn_y;
+
     deaths++;
     timeLeft=5;
+    n_generation++;
+    death="hunger"
+    message="Generation " + string(n_generation) + " : Death by " + string(death);
 }
 </string>
           </argument>
@@ -214,33 +218,60 @@ direction += 0.1;
     <event eventtype="4" ename="krakenTentacle">
       <action>
         <libid>1</libid>
-        <id>331</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_restart_game</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>x=spawn_x;
+    y=spawn_y;
+    timeLeft=50;
+    n_generation++;
+    death="hunger"
+    message="Generation " + string(n_generation) + " : Death by " + string(death);
+
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="4" ename="SeaMonster">
       <action>
         <libid>1</libid>
-        <id>331</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_restart_game</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+x=spawn_x;
+    y=spawn_y;
+    timeLeft=50;
+    n_generation++;
+    death="hunger"
+    message="Generation " + string(n_generation) + " : Death by " + string(death);
+
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="4" ename="storm">
@@ -296,17 +327,30 @@ direction += 0.1;
     <event eventtype="4" ename="colisaoTeste">
       <action>
         <libid>1</libid>
-        <id>331</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_restart_game</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>x=spawn_x;
+    y=spawn_y;
+    timeLeft=50;
+    n_generation++;
+    death="hunger"
+    message="Generation " + string(n_generation) + " : Death by " + string(death);
+
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>

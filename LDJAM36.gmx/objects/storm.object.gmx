@@ -27,6 +27,10 @@
             <kind>1</kind>
             <string>direction = wind.windDir;
 image_speed=0.2
+image_xscale=6;
+image_yscale=6;
+image_angle=random(360)
+image_index=irandom(10);
 </string>
           </argument>
         </arguments>
