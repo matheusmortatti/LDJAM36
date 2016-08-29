@@ -90,7 +90,7 @@ else if ((push) &amp;&amp; (mpos)) game_end();
             <kind>1</kind>
             <string>draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
-draw_set_font(font0);
+draw_set_font(font1)
 draw_set_color(c_white);
 
 var cont;
