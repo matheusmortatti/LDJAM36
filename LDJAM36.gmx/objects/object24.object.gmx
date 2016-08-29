@@ -25,47 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>_menu[0] = "To Honor!";
-_menu[1] = "I Cower!";
+            <string>_menu[0] = "Move the ship with Arrows/WASD";
+_menu[1] = "Beware monsters, rocks and wild winds!";
 
 space = 256;
 mpos = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>var move = 0;
-move -= (max(keyboard_check_pressed(vk_left), keyboard_check_pressed(ord("A")), 0)); 
-move += (max(keyboard_check_pressed(vk_right), keyboard_check_pressed(ord("D")), 0)); 
-
-if (move != 0) {
-    mpos += move;
-    if (mpos &lt; 0) mpos = 1;
-    if (mpos &gt; 1) mpos = 0;
-}
-
-var push;
-push = (max(keyboard_check_pressed(vk_enter), keyboard_check_pressed(vk_space), 0));
-if ((push) &amp;&amp; (!mpos)) instance_create(0,0, fadeCtrl);
-else if ((push) &amp;&amp; (mpos)) game_end();
 </string>
           </argument>
         </arguments>
