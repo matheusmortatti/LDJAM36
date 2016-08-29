@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>_menu[0] = "Move the ship with Arrows/WASD";
-_menu[1] = "Beware monsters, rocks and wild winds!";
+            <string>_menu[0] = "conect the stars to form constelations!";
+_menu[1] = "Guide yourself with their light";
 
-space = 256;
+space = 512;
 mpos = 0;
 </string>
           </argument>

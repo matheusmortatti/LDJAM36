@@ -30,6 +30,9 @@ _menu[1] = "I Cower!";
 
 space = 256;
 mpos = 0;
+
+globalvar drawFlag;
+drawFlag = 0;
 </string>
           </argument>
         </arguments>
@@ -61,10 +64,9 @@ if (move != 0) {
     if (mpos &lt; 0) mpos = 1;
     if (mpos &gt; 1) mpos = 0;
 }
-
 var push;
 push = (max(keyboard_check_pressed(vk_enter), keyboard_check_pressed(vk_space), 0));
-if ((push) &amp;&amp; (!mpos)) instance_create(0,0, fadeCtrl);
+if ((push) &amp;&amp; (!mpos)) drawFlag = 1;
 else if ((push) &amp;&amp; (mpos)) game_end();
 </string>
           </argument>

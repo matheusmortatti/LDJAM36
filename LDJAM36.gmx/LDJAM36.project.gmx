@@ -80,11 +80,12 @@
     <object>objects\bordery</object>
     <object>objects\menuControl</object>
     <object>objects\tutorial1</object>
-    <object>objects\object24</object>
+    <object>objects\tutorial2</object>
+    <object>objects\tutorial3</object>
+    <object>objects\fadeCtrl</object>
     <object>objects\soundBox</object>
     <object>objects\stone1</object>
     <object>objects\stone2</object>
-    <object>objects\fadeCtrl</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>

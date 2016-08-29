@@ -25,36 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>_menu[0] = "Move the ship with Arrows/WASD";
-_menu[1] = "Beware monsters, rocks and storms!";
+            <string>_menu[0] = "press ENTER or SPACE";
+_menu[1] = "To sail into destiny!";
 
-space = 512;
+space = 384;
 mpos = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>var push1;
-push1 = (max(keyboard_check_pressed(vk_enter), keyboard_check_pressed(vk_space), 0));
-if (push1) drawFlag = 1;
 </string>
           </argument>
         </arguments>
@@ -87,7 +62,7 @@ for (cont = 0; cont &lt;= 1; cont++) {
     draw_text(x + (cont * space), y, string(_menu[cont]));
 }
 
-draw_sprite(arrow, 0, x + (mpos * space)-64 , y);
+
 </string>
           </argument>
         </arguments>

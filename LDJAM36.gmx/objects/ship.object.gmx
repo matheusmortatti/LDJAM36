@@ -153,7 +153,7 @@ image_angle = direction;
 Strings : sistema de tempo
 */
 
-timeLeft -= (delta_time / power(10,6));
+if (room_exists(room2)) timeLeft -= (delta_time / power(10,6));
 if (timeLeft &lt;= 0) {
     x=spawn_x;
     y=spawn_y;
