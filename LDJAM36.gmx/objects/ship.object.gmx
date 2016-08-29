@@ -359,7 +359,7 @@ x=spawn_x;
             <kind>1</kind>
             <string>speed = wind.windStr*3;
 //if (direction != wind.windDir)
-    direction += 20;
+    direction += 15;
 </string>
           </argument>
         </arguments>
