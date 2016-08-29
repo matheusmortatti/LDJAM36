@@ -58,7 +58,7 @@ stars_2 = ds_list_create();
     Star Generator: By Strings
 */
 
-numberOfStarsPerRegion = 25
+numberOfStarsPerRegion = 15
 
 grid_size_x = 10240
 grid_size_y = 7680
@@ -183,7 +183,6 @@ for (cont = 0; cont &lt;= 10^12; cont++) {
           <argument>
             <kind>1</kind>
             <string>
-show_debug_message("Got here!!");
 for (i = 0; i &lt; ds_list_size(stars_1); i++) {
     s1 = ds_list_find_value(stars_1, i);
     s2 = ds_list_find_value(stars_2, i);

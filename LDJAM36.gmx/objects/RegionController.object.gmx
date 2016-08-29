@@ -25,22 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = view_xview + view_wview/2;
-y = view_yview + view_hview/2;
+            <string>center_x = view_xview[0] + view_wview[0]/2;
+center_y = view_xview[0] + view_wview[0]/2;
 
-instance_deactivate_region(view_xview - 1024, view_yview - 1024, view_wview + 2048,
-                            view_hview + 2048, false, true );
-
-instance_activate_region (view_xview - 1024, view_yview - 1024, view_wview + 2048,
-                            view_hview + 2048, true);
-                            
-//instance_activate_object(camera_controller);
-instance_activate_object(wind);
-instance_activate_object(starController);
-instance_activate_object(HUD);
-instance_activate_object(camera_controller);
-instance_activate_object(obj_controller_ripple);
-instance_activate_object(obj_player_ripple);
+//alarm[0] = 30
 </string>
           </argument>
         </arguments>
@@ -61,10 +49,26 @@ instance_activate_object(obj_player_ripple);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>boat_x = ship.x
-boat_y = ship.y
+            <string>
+if (abs(x - center_x) &gt; 16 || abs(y - center_x) &gt; 16) {
 
-//alarm[0] = 30
+    x = center_x;
+    y = center_y;
+    
+    //instance_deactivate_region(view_xview - 1024, view_yview - 2048, view_wview + 2048,
+    //                            view_hview + 2048, false, true );
+    
+    instance_activate_region (view_xview - 2048, view_yview - 2048, view_wview + 4096,
+                                view_hview + 4096, true);
+                                
+    instance_activate_object(camera_controller);
+    instance_activate_object(wind);
+    instance_activate_object(starController);
+    instance_activate_object(HUD);
+    instance_activate_object(camera_controller);
+    instance_activate_object(Lightning);
+    instance_activate_object(ship);
+    }
 </string>
           </argument>
         </arguments>
@@ -87,29 +91,10 @@ boat_y = ship.y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if (abs(boat_x - ship.x) &gt; 256 || abs(boat_y - ship.y) &gt; 256) {
+            <string>center_x = view_xview[0] + view_wview[0]/2;
+center_y = view_yview[0] + view_hview[0]/2;
 
-    boat_x = ship.x;
-    boat_y = ship.y;
-
-    x = view_xview + view_wview/2;
-    y = view_yview + view_hview/2;
-    
-    instance_deactivate_region(view_xview - 1024, view_yview - 2048, view_wview + 2048,
-                                view_hview + 2048, false, true );
-    
-    instance_activate_region (view_xview - 1024, view_yview - 1024, view_wview + 2048,
-                                view_hview + 2048, true);
-                                
-    //instance_activate_object(camera_controller);
-    instance_activate_object(wind);
-    instance_activate_object(starController);
-    instance_activate_object(HUD);
-    instance_activate_object(camera_controller);
-    instance_activate_object(obj_controller_ripple);
-    instance_activate_object(obj_player_ripple);
-    }
+//alarm[0] = 30
 </string>
           </argument>
         </arguments>
@@ -130,7 +115,29 @@ if (abs(boat_x - ship.x) &gt; 256 || abs(boat_y - ship.y) &gt; 256) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//alarm[0] = 30
+            <string>
+if (abs(x - center_x) &gt; 256 || abs(y - center_y) &gt; 256) {
+
+    x = center_x;
+    y = center_y;
+
+    x = view_xview + view_wview/2;
+    y = view_yview + view_hview/2;
+    
+    instance_deactivate_region(view_xview - 1024, view_yview - 2048, view_wview + 2048,
+                                view_hview + 2048, false, true );
+    
+    instance_activate_region (view_xview - 1024, view_yview - 1024, view_wview + 2048,
+                                view_hview + 2048, true);
+                                
+    //instance_activate_object(camera_controller);
+    instance_activate_object(wind);
+    instance_activate_object(starController);
+    instance_activate_object(HUD);
+    instance_activate_object(camera_controller);
+    instance_activate_object(Lightning);
+    instance_activate_object(ship);
+    }
 </string>
           </argument>
         </arguments>
