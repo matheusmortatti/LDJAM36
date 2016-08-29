@@ -100,7 +100,7 @@ message=""</code>
     <instance objName="bordery" x="512" y="0" name="inst_191330B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="bordery" x="9728" y="0" name="inst_44D038DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="soundBox" x="160" y="0" name="inst_9C45CC88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="colisaoFeliz" x="5472" y="2944" name="inst_D960F96B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="colisaoFeliz" x="5696" y="3136" name="inst_D960F96B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="colisaoFeliz" x="1184" y="1280" name="inst_3B2812AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="colisaoFeliz" x="4032" y="1056" name="inst_82C6BB1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="colisaoFeliz" x="1632" y="4352" name="inst_AF1042A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
