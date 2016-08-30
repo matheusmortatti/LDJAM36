@@ -48,8 +48,6 @@ _menu[18] = "light.";
 space = 32;
 mpos = 0;
 
-globalvar drawFlag;
-drawFlag = 0;
 
 Lightning.ambient_light = 0.3;
 

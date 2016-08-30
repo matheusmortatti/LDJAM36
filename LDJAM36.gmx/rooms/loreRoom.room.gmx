@@ -58,7 +58,6 @@ n_generation = 0;</code>
     <instance objName="bordery" x="1024" y="-160" name="inst_F9A5FBC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="borderx" x="-96" y="0" name="inst_17E518DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="borderx" x="-64" y="768" name="inst_F242F35A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="soundBox" x="160" y="0" name="inst_41690992" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="soundBox" x="64" y="0" name="inst_68E2DAEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="lore" x="480" y="128" name="inst_24C837B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="starController" x="32" y="0" name="inst_40194C50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
