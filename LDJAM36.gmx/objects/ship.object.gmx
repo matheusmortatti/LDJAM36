@@ -153,7 +153,7 @@ image_angle = direction;
 Strings : sistema de tempo
 */
 
-if (room_exists(room2)) timeLeft -= (delta_time / power(10,6));
+if (room_exists(game)) timeLeft -= (delta_time / power(10,6));
 if (timeLeft &lt;= 0) {
     x=spawn_x;
     y=spawn_y;
@@ -166,27 +166,11 @@ if (timeLeft &lt;= 0) {
 }
 
 if (n_generation &gt; 6) {
-    room_goto(5);
+    room_goto(badEnd);
 }
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="colisaoFinal">
-      <action>
-        <libid>1</libid>
-        <id>222</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_next_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="4" ename="stone2">
@@ -379,6 +363,22 @@ x=spawn_x;
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="colisaoFinal">
+      <action>
+        <libid>1</libid>
+        <id>222</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_next_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="4" ename="colisaoFeliz">

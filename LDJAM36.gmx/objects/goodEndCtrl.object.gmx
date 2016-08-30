@@ -28,10 +28,10 @@
             <string>_menu[0] = "Congratulations!";
 _menu[1] = "Your people have found the light!";
 
-space = 768;
+space = 600;
 mpos = 0;
 
-Lightning.ambient_light = 2;
+Lightning.ambient_light = 1;
 </string>
           </argument>
         </arguments>
@@ -54,14 +54,14 @@ Lightning.ambient_light = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign(fa_left);
-draw_set_valign(fa_middle);
+            <string>draw_set_halign(fa_center);
+draw_set_valign(fa_center);
 draw_set_font(font1)
 draw_set_color(c_white);
 
 var cont;
 for (cont = 0; cont &lt;= 1; cont++) {
-    draw_text(x + (cont * space), y, string(_menu[cont]));
+    draw_text(x, y + (cont * space), string(_menu[cont]));
 }
 
 
