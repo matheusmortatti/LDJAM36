@@ -18,6 +18,7 @@
     <sprite>sprites\barcoSprt</sprite>
     <sprite>sprites\otavioTestSprite2</sprite>
     <sprite>sprites\ilhaFeliz</sprite>
+    <sprite>sprites\ilhaFinal</sprite>
     <sprite>sprites\otavioTestSprite3</sprite>
     <sprite>sprites\estrelinha3</sprite>
     <sprite>sprites\estrelinha</sprite>
@@ -65,6 +66,7 @@
     <object>objects\velaIndependente</object>
     <object>objects\colisaoTeste</object>
     <object>objects\colisaoFeliz</object>
+    <object>objects\colisaoFinal</object>
     <object>objects\camera_controller</object>
     <object>objects\estrelaTest</object>
     <object>objects\estrela_tutorial</object>
@@ -84,6 +86,8 @@
     <object>objects\tutorial1</object>
     <object>objects\tutorial2</object>
     <object>objects\tutorial3</object>
+    <object>objects\goodEndCtrl</object>
+    <object>objects\badEndCtrl</object>
     <object>objects\fadeCtrl</object>
     <object>objects\soundBox</object>
     <object>objects\stone1</object>
@@ -92,7 +96,9 @@
   <rooms name="rooms">
     <room>rooms\main_menu</room>
     <room>rooms\tutorialRoom</room>
-    <room>rooms\room2</room>
+    <room>rooms\game</room>
+    <room>rooms\goodEnd</room>
+    <room>rooms\badEnd</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
