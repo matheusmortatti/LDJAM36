@@ -79,6 +79,8 @@ isTriggered = false;
           <argument>
             <kind>1</kind>
             <string>if (!isTriggered) {
+    image_xscale *= 1.1;
+    image_yscale *= 1.1;
     alarm[0] =  random_range(120,300);
     isTriggered = true;
     }
