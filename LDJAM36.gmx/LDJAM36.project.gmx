@@ -92,6 +92,7 @@
     <object>objects\badEndCtrl</object>
     <object>objects\fadeCtrl</object>
     <object>objects\soundBox</object>
+    <object>objects\soundbox_menu</object>
     <object>objects\stone1</object>
     <object>objects\stone2</object>
   </objects>
