@@ -74,6 +74,7 @@
     <object>objects\starController_tutorial</object>
     <object>objects\HUD</object>
     <object>objects\storm</object>
+    <object>objects\borderStorm</object>
     <object>objects\SeaMonster</object>
     <object>objects\krakenTrap</object>
     <object>objects\krakenTentacle</object>
