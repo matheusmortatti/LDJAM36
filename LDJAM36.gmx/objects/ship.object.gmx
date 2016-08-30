@@ -357,9 +357,9 @@ x=spawn_x;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = wind.windStr*3;
+            <string>speed = 0;
 //if (direction != wind.windDir)
-    direction += random_range(100, 300);
+    direction += 20
 </string>
           </argument>
         </arguments>

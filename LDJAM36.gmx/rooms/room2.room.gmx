@@ -89,10 +89,10 @@ message=""</code>
     <instance objName="colisaoFeliz" x="1632" y="4352" name="inst_AF1042A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="colisaoFeliz" x="2080" y="2784" name="inst_D6B1A065" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="colisaoFeliz" x="7872" y="1440" name="inst_054D215E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="colisaoFeliz" x="4160" y="3360" name="inst_C800BF39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="colisaoFeliz" x="3104" y="3008" name="inst_C800BF39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="colisaoFeliz" x="3072" y="5760" name="inst_23AA2BEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="colisaoFeliz" x="1600" y="6464" name="inst_D859F9A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="colisaoFeliz" x="3616" y="4416" name="inst_06A917C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="colisaoFeliz" x="3520" y="4608" name="inst_06A917C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="colisaoFeliz" x="4960" y="5888" name="inst_D12F204D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="colisaoFeliz" x="7584" y="4608" name="inst_625413AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="colisaoFeliz" x="7904" y="3232" name="inst_2012CE1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -107,7 +107,7 @@ message=""</code>
     <instance objName="stone2" x="4896" y="2624" name="inst_FF4B429C" locked="0" code="" scaleX="2" scaleY="2.70000004768372" colour="4294967295" rotation="0"/>
     <instance objName="SeaMonster" x="5120" y="2880" name="inst_1F1CCB0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RegionController" x="192" y="0" name="inst_F9550BD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="storm" x="4768" y="3392" name="inst_7B7A54B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="85"/>
+    <instance objName="storm" x="4864" y="3552" name="inst_7B7A54B1" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="85"/>
   </instances>
   <tiles>
     <tile bgName="" x="5504" y="2784" w="16" h="16" xo="0" yo="0" id="10000038" name="inst_F52C2007" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
