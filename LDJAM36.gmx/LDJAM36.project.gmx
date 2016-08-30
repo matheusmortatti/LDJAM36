@@ -84,6 +84,7 @@
     <object>objects\borderx</object>
     <object>objects\bordery</object>
     <object>objects\menuControl</object>
+    <object>objects\lore</object>
     <object>objects\tutorial1</object>
     <object>objects\tutorial2</object>
     <object>objects\tutorial3</object>
@@ -96,6 +97,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
+    <room>rooms\loreRoom</room>
     <room>rooms\tutorialRoom</room>
     <room>rooms\game</room>
     <room>rooms\goodEnd</room>

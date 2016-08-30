@@ -25,13 +25,34 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>_menu[0] = "Move the ship with Arrows/WASD";
-_menu[1] = "Beware monsters, rocks and storms!";
+            <string>_menu[0] = "the Sun should wake our cattle";
+_menu[1] = "the Sun should bathe our vines";
+_menu[2] = "the Sun should rise upon us.";
+_menu[3] = " ";
+_menu[4] = "But it didn't.";
+_menu[5] = " ";
+_menu[6] = "Destiny is a threacherous companion,";
+_menu[7] = "and it trapped us here, in time";
+_menu[8] = "in that night.";
+_menu[9] = " ";
+_menu[10] = "Destiny said";
+_menu[11] = "tonight, we end";
+_menu[12] = "and it's eternal.";
+_menu[13] = " ";
+_menu[14] = "But maybe...";
+_menu[15] = " ";
+_menu[16] = "There is";
+_menu[17] = " ";
+_menu[18] = "light.";
 
-space = 512;
+space = 32;
 mpos = 0;
 
-Lightning.ambient_light = 0.01;
+globalvar drawFlag;
+drawFlag = 0;
+
+Lightning.ambient_light = 0.3;
+
 </string>
           </argument>
         </arguments>
@@ -54,9 +75,9 @@ Lightning.ambient_light = 0.01;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var push1;
-push1 = (max(keyboard_check_pressed(vk_enter), keyboard_check_pressed(vk_space), 0));
-if (push1) drawFlag = 1;
+            <string>var push;
+push = (max(keyboard_check_pressed(vk_enter), keyboard_check_pressed(vk_space), 0));
+if (push) drawFlag = 1;
 </string>
           </argument>
         </arguments>
@@ -79,17 +100,15 @@ if (push1) drawFlag = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign(fa_left);
-draw_set_valign(fa_middle);
+            <string>draw_set_halign(fa_center);
+draw_set_valign(fa_center);
 draw_set_font(font1)
 draw_set_color(c_white);
 
 var cont;
-for (cont = 0; cont &lt;= 1; cont++) {
-    draw_text(x + (cont * space), y, string(_menu[cont]));
+for (cont = 0; cont &lt;= 18; cont++) {
+    draw_text(x, y + (cont * space), string(_menu[cont]));
 }
-
-draw_sprite(arrow, 0, x + (mpos * space)-64 , y);
 </string>
           </argument>
         </arguments>
