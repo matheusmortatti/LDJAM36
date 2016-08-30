@@ -67,7 +67,9 @@
     <object>objects\colisaoFeliz</object>
     <object>objects\camera_controller</object>
     <object>objects\estrelaTest</object>
+    <object>objects\estrela_tutorial</object>
     <object>objects\starController</object>
+    <object>objects\starController_tutorial</object>
     <object>objects\HUD</object>
     <object>objects\storm</object>
     <object>objects\SeaMonster</object>

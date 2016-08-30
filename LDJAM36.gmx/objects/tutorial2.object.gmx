@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>_menu[0] = "conect the stars to form constelations!";
-_menu[1] = "Guide yourself with their light";
+            <string>_menu[0] = "The stars... connect them.";
 
 space = 512;
 mpos = 0;
@@ -57,12 +56,8 @@ draw_set_valign(fa_middle);
 draw_set_font(font1)
 draw_set_color(c_white);
 
-var cont;
-for (cont = 0; cont &lt;= 1; cont++) {
-    draw_text(x + (cont * space), y, string(_menu[cont]));
-}
 
-draw_sprite(arrow, 0, x + (mpos * space)-64 , y);
+draw_text(x, y, string(_menu[0]));
 </string>
           </argument>
         </arguments>
