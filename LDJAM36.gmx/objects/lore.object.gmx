@@ -45,7 +45,7 @@ _menu[16] = "There is";
 _menu[17] = " ";
 _menu[18] = "light.";
 
-space = 32;
+space = 28;
 mpos = 0;
 
 

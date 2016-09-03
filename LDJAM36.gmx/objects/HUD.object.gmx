@@ -86,13 +86,13 @@ message_current=message;
 draw_set_font(font1);
 draw_set_colour(c_white);
 
-draw_text(50, 700, "FOOD: " + string(ship.timeLeft));
+draw_text(50, 520, "FOOD: " + string(ship.timeLeft));
 
 if (n_generation &gt; 0) draw_text(700, 50, "Ship Direction: " + string(ship.direction));
 if (n_generation &gt; 1) draw_text(700, 100, "Wind Direction: " + string(wind.windDir));
 if (n_generation &gt; 2) draw_text(50, 50, "Ship Speed: " + string(ship.speed));
 if (n_generation &gt; 3) draw_text(50, 100, "Wind Strenght: " + string(wind.windStr));
-if (n_generation &gt; 4){  draw_sprite_ext(base_compass, -1, 68, 560, 2, 2,-1, c_white, 1); draw_sprite_ext(compass, -1, 132, 629, 2, 2, -ship.direction+90, c_white, 1);}
+if (n_generation &gt; 4){  draw_sprite_ext(base_compass, -1, 68, 360, 2, 2,-1, c_white, 1); draw_sprite_ext(compass, -1, 132, 429, 2, 2, -ship.direction+90, c_white, 1);}
 
 
 
