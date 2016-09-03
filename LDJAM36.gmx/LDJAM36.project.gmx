@@ -97,10 +97,10 @@
     <object>objects\stone2</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\game</room>
     <room>rooms\main_menu</room>
     <room>rooms\loreRoom</room>
     <room>rooms\tutorialRoom</room>
+    <room>rooms\game</room>
     <room>rooms\goodEnd</room>
     <room>rooms\badEnd</room>
   </rooms>
